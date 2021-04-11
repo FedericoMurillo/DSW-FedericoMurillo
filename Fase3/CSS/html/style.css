@@ -1,0 +1,83 @@
+body{
+    display: grid;
+    grid-template-columns: 15% 50% 35% ;
+    grid-template-areas: 
+    "header header header"
+    "menu aside proposito"
+    "footer footer footer";
+    background:palegreen;
+    border:white 10px groove;
+    padding: 5px;
+}
+
+li{
+    list-style: none;
+}
+section{
+    margin:90px;
+    grid-column: 2/3;
+    text-align:center;
+    column-rule: 6px inset;
+    background: white;
+    border:black 2px outset;
+    padding: 5px;
+}
+
+header{
+    text-align: center;
+    grid-column: 1/4;
+    background: white;
+    margin: auto;
+    padding: 5px;
+    border:black 2px outset;
+}   
+
+.menu{
+    height: 350px;
+    width: 150px;
+    margin: 25px;
+    grid-column: 1/2;
+    background: white;
+    padding: 5px;
+    border:black 2px outset;
+}   
+    
+aside{
+    grid-column: 3/4;
+    text-align: center;
+    margin:auto;
+    background: white;
+    padding: 5px;
+    border:black 2px outset;
+    align-self: flex-start;
+}
+
+#proposito{
+    margin: auto;
+    grid-column: 2/3;
+    text-align: center;   
+    column-rule:6px inset;
+    background: white;
+    border:black 2px outset;
+    padding: 5px;
+}
+
+
+.footer{
+    grid-area:footer;
+    text-align: center;
+    background: white;
+    margin: auto;
+    border:black 2px outset;
+    padding: 5px;
+}
+
+
+article{
+    text-align: left;
+    background: white;
+    margin:30px;
+    padding: 5px;
+    border:black 2px outset;
+    padding: 5px;
+}
