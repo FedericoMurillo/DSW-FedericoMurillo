@@ -1,0 +1,101 @@
+body{
+    display: grid;
+    grid-template-columns: 15% 50% 35% ;
+    grid-template-areas: 
+    "header header header"
+    "menu aside proposito"
+    "footer footer footer";
+    background:mediumspringgreen;
+    border:white 10px groove;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+nav{
+    grid-column: 1/4;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    margin:90px;
+    grid-column: 2/3;
+    text-align:center;
+    column-rule: 6px inset;
+    background:white;
+    border:black 2px outset;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+header{
+    text-align: center;
+    grid-column: 1/4;
+    background:black;
+    border:white 2px outset;
+    border-radius: 20px;
+    color: white;
+}   
+
+.menu{
+    height: 350px;
+    width: 150px;
+    margin: 10px;
+    grid-column: 1/2;
+    background:white;
+    padding: 6px;
+    border:black 2px outset;
+    border-radius: 20px;
+}   
+    
+aside{
+    grid-column: 3/4;
+    text-align: center;
+    margin:auto;
+    background:white;
+    padding: 5px;
+    border:black 2px outset;
+    align-self: flex-start;
+    border-radius: 20px;
+}
+
+#proposito{
+    margin: auto;
+    grid-column: 2/3;
+    text-align: center;   
+    column-rule:6px inset;
+    background:white;
+    border:black 2px outset;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+.footer{
+    grid-area:footer;
+    text-align: center;
+    background:black;
+    padding: 5px;
+    border-radius: 40px;
+    border:white 2px outset;
+}
+
+article{
+    text-align: left;
+    background: white;
+    margin:30px;
+    border-radius: 20px;
+    padding: 5px;
+    border:black 2px outset;
+    padding: 5px;
+}

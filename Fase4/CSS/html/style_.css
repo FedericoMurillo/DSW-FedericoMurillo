@@ -1,0 +1,30 @@
+html{
+    margin:0px;
+    height:100%;
+}
+body{
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    background-color: darkseagreen;
+}
+
+.col-4{
+    grid-column: 3;
+    grid-row: 2;
+}
+.header{
+    height:70px;
+    background-color:lightblue;
+}
+
+aside{
+    position:relative;
+    width: 500px;
+    left:250px;
+    right:500px;
+}
+
+.footer{
+    height:39px;
+    background-color:lightblue;
+}
